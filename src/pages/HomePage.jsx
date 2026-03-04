@@ -1,7 +1,14 @@
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import Card from '../components/Card'
 
 function HomePage() {
+  const [tasks] = useState([
+    { id: '1', title: '学习 useState', completed: false },
+    { id: '2', title: '实现任务列表渲染', completed: true },
+    { id: '3', title: '后面再实现新增 / 删除', completed: false },
+  ])
+
   return (
     <div className="page">
       <h2>首页 · 待办列表</h2>
@@ -16,6 +23,16 @@ function HomePage() {
           <li>
             <Link to="/task/123">/task/123</Link>
           </li>
+        </ul>
+      </Card>
+
+      <Card title="示例任务列表">
+        <ul>
+          {tasks.map((task) => (
+            <li key={task.id}>
+              {task.title}（{task.completed ? '已完成' : '未完成'}）
+            </li>
+          ))}
         </ul>
       </Card>
     </div>
