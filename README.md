@@ -1,4 +1,6 @@
-# React + Vite
+# react-learn-2026
+
+本项目基于 **React + Vite** 搭建，用于 React 学习和练习。
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
