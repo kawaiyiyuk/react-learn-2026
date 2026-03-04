@@ -1,8 +1,9 @@
-function Card({ title, children }) {
+function Card({ title, footer, children }) {
   return (
     <div className="card">
-        {title && <h3 className="card-title">{title}</h3>}
-        <div className="card-body">{children}</div>
+      {title && <h3 className="card-title">{title}</h3>}
+      <div className="card-body">{children}</div>
+      {footer && <div className="card-footer">{footer}</div>}
     </div>
   )
 }

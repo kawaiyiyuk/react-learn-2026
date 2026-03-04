@@ -79,6 +79,12 @@
   margin: 0.25rem 0;
 }
 
+.card-footer {
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
 .read-the-docs {
   color: #888;
 }
