@@ -13,8 +13,12 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 0;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid #555;
   margin-bottom: 2rem;
+}
+
+.layout-header h1 {
+  color: #f2f2f2;
 }
 
 .layout-header nav {
@@ -23,7 +27,10 @@
 }
 
 .layout-header a {
-  color: #646cff;
+  color: #7c8aff;
+}
+.layout-header a:hover {
+  color: #9ca8ff;
 }
 
 .layout-main {
@@ -32,6 +39,7 @@
 
 .page h2 {
   margin-top: 0;
+  color: #f2f2f2;
 }
 
 .logo {
@@ -66,23 +74,51 @@
   padding: 1.5rem;
   margin-top: 1rem;
   border-radius: 8px;
-  border: 1px solid #444;
-  background-color: #1e1e1e;
+  border: 1px solid #555;
+  background-color: #252525;
 }
 
 .card-title {
   margin-top: 0;
   margin-bottom: 0.75rem;
+  color: #f2f2f2;
+}
+
+.card-body {
+  color: #e0e0e0;
 }
 
 .card-body p {
   margin: 0.25rem 0;
 }
 
+.card-body ul {
+  color: #e0e0e0;
+}
+
+.card-body a {
+  color: #7c8aff;
+}
+.card-body a:hover {
+  color: #9ca8ff;
+}
+
+.card-body li {
+  margin: 0.35rem 0;
+}
+
 .card-footer {
   margin-top: 0.75rem;
   font-size: 0.9rem;
-  color: #aaa;
+  color: #b8b8b8;
+}
+
+/* 任务列表中「未完成/已完成」状态文字更易读 */
+.card-body .task-status {
+  color: #9eb8ff;
+}
+.card-body .task-status.done {
+  color: #7dd87d;
 }
 
 .read-the-docs {
